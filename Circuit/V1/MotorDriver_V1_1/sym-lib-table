@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "0-Library")(type "KiCad")(uri "/Users/banbatakumi/GitHub/Sci-Tech/Circuit/Lib/0-Library.kicad_sym")(options "")(descr ""))
+)

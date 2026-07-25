@@ -1,0 +1,18 @@
+# KiCad backup files
+*-backups/
+*.bak
+*.bck
+
+# KiCad cache files
+fp-info-cache
+*.kicad_prl
+
+# KiCad autosave
+_autosave-*
+
+# KiCad 3D cache
+*_cache.lib
+
+# OS files
+.DS_Store
+Thumbs.db

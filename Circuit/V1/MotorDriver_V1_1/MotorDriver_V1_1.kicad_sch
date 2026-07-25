@@ -1336,6 +1336,12 @@
 		(uuid "11d5d6c2-0e77-4b2e-81b7-cf0b424ed92a")
 	)
 	(junction
+		(at 33.02 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "187b5dce-f563-4e72-9d0a-f5c84a77bd86")
+	)
+	(junction
 		(at 80.01 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1352,6 +1358,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54788d1b-ccdf-4f18-85b0-77d7c33cf7b1")
+	)
+	(junction
+		(at 25.4 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "732aebdc-7300-4c72-9ebe-9e114469b4e2")
 	)
 	(junction
 		(at 33.02 48.26)
@@ -1567,6 +1579,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 68.58) (xy 33.02 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e11a6bc-27c0-4da0-b99b-5f3f29a1633f")
+	)
+	(wire
+		(pts
 			(xy 53.34 35.56) (xy 53.34 38.1)
 		)
 		(stroke
@@ -1607,7 +1629,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 58.42) (xy 33.02 63.5)
+			(xy 33.02 58.42) (xy 33.02 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1634,6 +1656,16 @@
 			(type default)
 		)
 		(uuid "bbbb7487-de24-4d45-9567-f0c0699a4223")
+	)
+	(wire
+		(pts
+			(xy 25.4 58.42) (xy 25.4 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c828ca92-2cf3-443c-9c7d-829584cb5167")
 	)
 	(wire
 		(pts
@@ -2344,6 +2376,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 29.21 68.58 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "036dd10a-eefe-48b6-9336-d0f3fb5f41c5")
+		(property "Reference" "C7"
+			(at 29.21 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 29.21 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 25.4 69.5452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e49df2c8-8fd8-4dbe-ae8f-3346f03e2bdb")
+		)
+		(pin "2"
+			(uuid "f0a06136-6a66-46dc-8b64-e602f50a72eb")
+		)
+		(instances
+			(project "MotorDriver_V1_1"
+				(path "/83381d65-5a20-4ed4-8930-66ed727b8ae3"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
 		(at 99.06 62.23 0)
 		(mirror x)
@@ -2512,7 +2611,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.02 63.5 0)
+		(at 33.02 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2520,7 +2619,7 @@
 		(dnp no)
 		(uuid "29b980c4-8555-4182-9480-340a8fd5fbed")
 		(property "Reference" "#PWR06"
-			(at 33.02 69.85 0)
+			(at 33.02 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,7 +2628,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 67.31 0)
+			(at 33.02 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,7 +2636,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 63.5 0)
+			(at 33.02 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +2645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 63.5 0)
+			(at 33.02 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2555,7 +2654,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 63.5 0)
+			(at 33.02 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)

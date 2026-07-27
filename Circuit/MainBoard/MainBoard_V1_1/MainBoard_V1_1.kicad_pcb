@@ -24063,6 +24063,19 @@
 			(justify right mirror)
 		)
 	)
+	(gr_text "FreeSpace"
+		(at -26.5 -27 180)
+		(layer "B.SilkS" knockout)
+		(uuid "3905aef5-16b5-4b86-b513-82d8b2ca26ae")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "SCL"
 		(at -17 -7.25 270)
 		(layer "B.SilkS")
